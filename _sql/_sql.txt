@@ -1,0 +1,20 @@
+DROP SCHEMA IF EXISTS mybatisMappingTest01;
+CREATE SCHEMA mybatisMappingTest01;
+
+use mybatisMappingTest01;
+
+DROP TABLE IF EXISTS things;
+
+CREATE TABLE things(
+ID INT NOT NULL AUTO_INCREMENT,
+column_mad VARCHAR(60) NULL,
+column_one INT NOT NULL,
+column_otherstuff INT NULL,
+column_B VARCHAR(60) NOT NULL,
+PRIMARY KEY (ID)
+) TYPE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+INSERT INTO `things` (column_mad, column_one, column_otherstuff, column_B) VALUES ("sdfsad", 10, 10, "some string");
+INSERT INTO `things` (column_one, column_B) VALUES (2, "some other string");
+
+SELECT * FROM mybatismappingtest01.things;
