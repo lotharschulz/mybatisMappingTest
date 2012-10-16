@@ -3,10 +3,8 @@ package info.lotharschulz.mybatisMappingTest01;
 public class Things {
 
     private int ID;
-    private String stuff;
-    private String prop2;
     private int column_one;
-    private int someotherprop;
+    private String column_B;
 
     public Things() {
     }
@@ -19,16 +17,12 @@ public class Things {
         this.ID = ID;
     }
 
-    public String getStuff() {
-        return stuff;
+    public String getColumn_B() {
+        return column_B;
     }
 
-    public void setStuff(String stuff) {
-        this.stuff = stuff;
-    }
-
-    public String getProp2() {
-        return prop2;
+    public void setColumn_B(String column_B) {
+        this.column_B = column_B;
     }
 
     public int getColumn_one() {
@@ -39,23 +33,9 @@ public class Things {
         this.column_one = column_one;
     }
 
-    
-    
-    public void setProp2(String prop2) {
-        this.prop2 = prop2;
-    }
-
-    public int getSomeotherprop() {
-        return someotherprop;
-    }
-
-    public void setSomeotherprop(int someotherprop) {
-        this.someotherprop = someotherprop;
-    }
-
     @Override
     public String toString() {
-        return "Things{" + "ID=" + ID + ", stuff=" + stuff + ", prop2=" + prop2 + ", column_one=" + column_one + ", someotherprop=" + someotherprop + '}';
+        return "Things{" + "ID=" + ID + ", column_one=" + column_one + ", column_B=" + column_B + '}';
     }
 
 }

@@ -29,7 +29,7 @@ public interface ThingsMapper {
     @Results(value = {
         @Result(property="ID", column="ID"),
         @Result(property="column_one", column="column_one"),
-        @Result(property="prop2", column="column_B")
+        @Result(property="column_B", column="column_B")
     })
     List<Things> selectAll();
     

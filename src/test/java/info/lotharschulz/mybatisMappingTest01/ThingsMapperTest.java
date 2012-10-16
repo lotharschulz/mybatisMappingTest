@@ -27,7 +27,7 @@ public class ThingsMapperTest {
         log.debug("selectAll");
         List<Things> thingslist = imageDAO.selectAll();
         log.debug("thingslist: " + thingslist);
-        String expected = "[Things{ID=1, stuff=null, prop2=some string, column_one=10, someotherprop=0}, Things{ID=2, stuff=null, prop2=some other string, column_one=2, someotherprop=0}]";
+        String expected = "[Things{ID=1, column_one=10, column_B=some string}, Things{ID=2, column_one=2, column_B=some other string}]";
         Assert.assertEquals(thingslist.toString().trim(), expected.trim());
     }
     
