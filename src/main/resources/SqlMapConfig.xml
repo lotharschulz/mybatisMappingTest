@@ -13,8 +13,8 @@
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://localhost:3306/mybatisMappingTest01"/>
-                <property name="username" value="root"/>
-                <property name="password" value=""/>
+                <property name="username" value="[user name]"/>
+                <property name="password" value="[password]"/>
             </dataSource>
         </environment>
     </environments>
